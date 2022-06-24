@@ -18,9 +18,9 @@ internal class MemberRepositoryV1Test : DescribeSpec({
     lateinit var repository: MemberRepositoryV1
 
     beforeContainer {
-        log.info { "beforeTest" }
+        log.info { "beforeContainer" }
         // 항상 새로운 Connection 획득
-        // val dataSource = DriverManagerDataSource(URL, USERNAME, PASSWORD)
+        //val dataSource = DriverManagerDataSource(URL, USERNAME, PASSWORD)
         val dataSource = HikariDataSource().apply {
             jdbcUrl = URL
             username = USERNAME

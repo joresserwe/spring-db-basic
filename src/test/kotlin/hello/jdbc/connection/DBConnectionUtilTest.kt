@@ -11,7 +11,4 @@ class DBConnectionUtilTest : FunSpec({
         val connection = DBConnectionUtil.getConnection()
         connection.shouldNotBeNull()
     }
-
-}) {
-
-}
+})
