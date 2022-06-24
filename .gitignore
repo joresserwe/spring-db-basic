@@ -35,6 +35,3 @@ out/
 
 ### VS Code ###
 .vscode/
-
-### h2 ###
-!h2/bin/
