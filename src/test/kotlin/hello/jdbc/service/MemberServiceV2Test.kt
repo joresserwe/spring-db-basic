@@ -6,7 +6,6 @@ import hello.jdbc.connection.ConnectionConst.Companion.USERNAME
 import hello.jdbc.domain.Member
 import hello.jdbc.repository.MemberRepositoryV2
 import io.kotest.assertions.throwables.shouldThrowExactly
-import io.kotest.core.spec.IsolationMode
 import io.kotest.core.spec.style.DescribeSpec
 import io.kotest.matchers.should
 import io.kotest.matchers.shouldBe
@@ -18,8 +17,6 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource
  * Transaction 사용
  */
 internal class MemberServiceV2Test : DescribeSpec({
-
-    isolationMode = IsolationMode.InstancePerLeaf
 
     lateinit var memberRepository: MemberRepositoryV2
     lateinit var memberService: MemberServiceV2
