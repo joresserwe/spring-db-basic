@@ -7,7 +7,6 @@ import javax.sql.DataSource
 
 /**
  * Transaction - Parameter, Connection Pool
- *
  */
 class MemberServiceV2(
     private val memberRepository: MemberRepositoryV2,
@@ -23,11 +22,9 @@ class MemberServiceV2(
                 bizLogic(con, fromId, toId, money)
                 con.commit()
             } catch (e: Exception) {
-                log.info { "rollback!!!" }
                 con.rollback()
                 throw e
             } finally {
-                log.info { "finally" }
                 con.autoCommit = true // Connection Poll 생각
             }
         }

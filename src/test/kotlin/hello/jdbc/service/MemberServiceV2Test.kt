@@ -15,7 +15,7 @@ import mu.KotlinLogging
 import org.springframework.jdbc.datasource.DriverManagerDataSource
 
 /**
- * Transaction이 없어서 문제 발생
+ * Transaction 사용
  */
 internal class MemberServiceV2Test : DescribeSpec({
 

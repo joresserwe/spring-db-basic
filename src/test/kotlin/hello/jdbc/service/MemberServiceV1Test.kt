@@ -55,7 +55,7 @@ internal class MemberServiceV1Test : DescribeSpec({
                 }
             }
         }
-        describe("예외 발생") {
+        context("예외 발생") {
             val memberA = Member(MEMBER_A, 10000)
             val memberEX = Member(MEMBER_EX, 10000) // 예외 대상
             memberRepository.save(memberA)
