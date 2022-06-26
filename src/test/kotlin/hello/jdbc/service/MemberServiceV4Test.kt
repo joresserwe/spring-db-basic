@@ -2,7 +2,7 @@ package hello.jdbc.service
 
 import hello.jdbc.domain.Member
 import hello.jdbc.repository.MemberRepository
-import hello.jdbc.repository.MemberRepositoryV4_1
+import hello.jdbc.repository.MemberRepositoryV4_2
 import io.kotest.assertions.throwables.shouldThrowExactly
 import io.kotest.core.spec.style.DescribeSpec
 import io.kotest.matchers.should
@@ -38,7 +38,8 @@ internal class MemberServiceV4Test : DescribeSpec() {
         private val dataSource: DataSource
     ) {
         @Bean
-        fun memberRepository() = MemberRepositoryV4_1(dataSource)
+        //fun memberRepository() = MemberRepositoryV4_1(dataSource)
+        fun memberRepository() = MemberRepositoryV4_2(dataSource)
 
         @Bean
         fun memberService() = MemberServiceV4(memberRepository())
