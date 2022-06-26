@@ -46,16 +46,16 @@ class ConnectionTest : FunSpec({
         private fun useDataSource(dataSource: DataSource) {
             val connection1 = dataSource.connection
             val connection2 = dataSource.connection
-            val connection3 = dataSource.connection
-            val connection4 = dataSource.connection
-            val connection5 = dataSource.connection
-            val connection6 = dataSource.connection
-            val connection7 = dataSource.connection
-            val connection8 = dataSource.connection
-            val connection9 = dataSource.connection
-            val connection10 = dataSource.connection
-            val connection11 = dataSource.connection
-            val connection12 = dataSource.connection
+            /*  val connection3 = dataSource.connection
+              val connection4 = dataSource.connection
+              val connection5 = dataSource.connection
+              val connection6 = dataSource.connection
+              val connection7 = dataSource.connection
+              val connection8 = dataSource.connection
+              val connection9 = dataSource.connection
+              val connection10 = dataSource.connection
+              val connection11 = dataSource.connection
+              val connection12 = dataSource.connection*/
             log.info { "connection=${connection1}, class=${connection1::class}" }
             log.info { "connection=${connection2}, class=${connection2::class}" }
         }
