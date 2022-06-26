@@ -1,6 +1,6 @@
 package hello.jdbc.repository.ex
 
-open class MyDbException : RuntimeException {
+class MyDuplicateKeyException : MyDbException {
 
     constructor() : super()
 
