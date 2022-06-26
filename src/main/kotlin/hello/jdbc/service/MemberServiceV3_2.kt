@@ -10,9 +10,8 @@ import org.springframework.transaction.support.TransactionTemplate
  */
 class MemberServiceV3_2(
     private val memberRepository: MemberRepositoryV3,
-    private val transactionManager: PlatformTransactionManager
+    transactionManager: PlatformTransactionManager
 ) {
-
     private val log = KotlinLogging.logger {}
     private val txTemplate = TransactionTemplate(transactionManager)
 
